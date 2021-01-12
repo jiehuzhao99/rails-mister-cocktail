@@ -1,0 +1,38 @@
+.cocktail-card{
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  &:hover .card-image {
+    top: -20%;
+  }
+  &:hover .card-info{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-image{
+  position: absolute;
+  max-width: 130%;
+  left: -15%;
+  right: 0;
+  margin: 0 auto;
+  top: -18%;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.card-info{
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ededed;
+  padding-top: calc(100% * 1.18);
+  transition: all 0.3s ease-out 0.1s;
+  h2{
+    font-size: 14px;
+    font-weight: 800;
+  }
+}

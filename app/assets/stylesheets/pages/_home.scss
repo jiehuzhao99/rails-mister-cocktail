@@ -1,0 +1,25 @@
+// Specific CSS for your home-page
+body {
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+}
+
+h2, h3, p {
+  margin: 0;
+}
+
+.container{
+  padding: 70px 0;
+}
+
+.card-container{
+  max-width: 375px;
+  margin: 50px auto;
+}
+
+.grid{
+  display: grid;
+  grid-template: 1fr / repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
